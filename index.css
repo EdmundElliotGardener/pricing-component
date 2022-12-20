@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
+  margin: -0;
+  padding: -0;
 }
 .body {
   width: 100%;
@@ -11,30 +9,28 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat;
-  overflow: hidden;
-  
-
-
 }
 .container {
   max-width: 100%;
   min-height: 100%;
-  font-size: 15px;
-  font-family:Montserrat;
-  background-color: hsl(240, 78%, 98%);
+  font-size: 14px;
+  font-family: Montserrat;
+  background-color: hsl(234, 20%, 94%);
   background-image: url("./images/bg-bottom.svg"), url("./images/bg-top.svg");
   background-repeat: no-repeat no-repeat;
   background-size: 20px, 10px;
-  background-position:0% 100%, 100% 0% ;
+  background-position: 0% 100%, 100% 0%;
 }
 h1 {
   text-align: center;
   padding: 2% 0;
-  font-size: 47px;
+  font-size: 32px;
   color: hsl(233, 13%, 49%);
+  line-height: 39px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 28px;
   padding: 50px 50px;
   font-weight: 700;
   font-family: Montserrat;
@@ -46,22 +42,20 @@ h4 {
   font-style: Montserrat;
   font-weight: 700;
 }
-h3{
-   font-size: 72px;
+h3 {
+  font-size: 72px;
   padding: 16px 48px;
   font-style: Montserrat;
   font-weight: 700;
-
 }
 p {
-  font-size: 16px;
+  font-size: 15px;
 }
 .selector {
   display: flex;
   color: hsl(234, 14%, 74%);
   justify-content: center;
   align-items: center;
-  
 }
 .select-bar {
   margin: 0 24px;
@@ -76,12 +70,13 @@ p {
   cursor: pointer;
 }
 .select-ball {
-  width: 20.8px;
-  height: 20.8px;
-  background-color:white;
-transition-duration: 5000;
- justify-items: center;
- border-radius: 50%;
+  width: 26px;
+  height: 25px;
+  left: 94px;
+  top: 0px;
+  background-color: white;
+  justify-items: center;
+  border-radius: 50%;
 }
 .select-ball:hover {
   opacity: 0.6;
@@ -137,7 +132,7 @@ button {
   cursor: pointer;
   transition-duration: 3000;
   color: white;
-  background-color:#6D72DE;
+  background-color: #6d72de;
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
@@ -157,12 +152,12 @@ button:hover {
 }
 /*Media Query */
 @media only screen and(max-width:760px) {
-  .section {
+  body {
+    flex-direction: column;
+
+  }
+  .section-left,.section-middle,.section-right{
     flex-direction: column;
   }
-  .section-left, .section-middle, .section-right {
-    margin: 10px;
-    border-radius: 10px;
-    width: 80%;
-  }
 }
+
