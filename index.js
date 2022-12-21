@@ -1,4 +1,8 @@
-const Button = document.getElementById("select-ball");
+// const Button = document.getElementById("selector-ball");
+const Button = document.querySelector(".selector-ball");
+const select_bar = document.querySelector(".select-bar");
+
+
 Button.addEventListener("click", myFunction);
 
 function myFunction() {
@@ -11,12 +15,13 @@ function myFunction() {
       if (monthPayment[i].style.display === "none") {
         monthPayment[i].style.display = "block";
         annualPayment[i].style.display = "none";
-        Button.style.justifyContent = "flex-end";
+        select_bar.style.justifyContent = "flex-end";
       } else {
         monthPayment[i].style.display = "none";
         annualPayment[i].style.display = "block";
-        Button.style.justifyContent = "flex-start";
+        select_bar.style.justifyContent = "flex-start";
       }
     }
   }
+
 }
